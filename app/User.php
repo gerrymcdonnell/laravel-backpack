@@ -4,7 +4,12 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 use Backpack\Base\app\Notifications\ResetPasswordNotification as ResetPasswordNotification;
+use CrudTrait; // <----- this
+use HasRoles; // <------ and this
+use Backpack\CRUD\CrudTrait; // <------------------------------- this one
+use Spatie\Permission\Traits\HasRoles;// <---------------------- and this one
 
 class User extends Authenticatable
 {
@@ -39,3 +44,6 @@ class User extends Authenticatable
         $this->notify(new ResetPasswordNotification($token));
     }
 }
+
+
+
