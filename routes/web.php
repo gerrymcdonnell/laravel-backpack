@@ -29,5 +29,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //admin group
 Route::group(['prefix'=>'admin','middleware'=>'admin'],function(){
-    CRUD::resource('customer','CustomerCrudController');
+    CRUD::resource('customer','Admin\CustomerCrudController');
 });

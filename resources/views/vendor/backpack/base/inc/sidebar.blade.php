@@ -16,6 +16,8 @@
 
 
            <!-- custom added menu items -->
+           <li><a href="{{  backpack_url('customer') }}"><i class="fa fa-user-o"></i> <span>manage customers</span></a></li>
+
            <li><a href="{{  backpack_url('elfinder') }}"><i class="fa fa-files-o"></i> <span>File manager</span></a></li>
 
           <li><a href="{{ backpack_url('backup') }}"><i class="fa fa-hdd-o"></i> <span>Backups</span></a></li>
