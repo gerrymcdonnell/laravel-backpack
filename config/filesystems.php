@@ -73,6 +73,11 @@ return [
             'driver' => 'local',
             'root'   => storage_path(),
         ],
+        // used for Backpack
+        'uploads' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+        ],
 
     ],
 
